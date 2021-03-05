@@ -1,31 +1,193 @@
-/* ----- =structure ----- */
-
+/* start here:  */
+/* ----- =the page starts ----- */
 body {
 	display: flex;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap; 
   background-color: #fff;
   margin: auto;
+  /* align-items: flex-start;  */
 }
-
+/* ----- =HEADER top bun ----- */
+header {
+  margin: auto; 
+}
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 60px;
+  color: #292557;
+  padding-top: 0px;
+  margin: 10px;
+  text-align: center;
+  /* font-size: 28; */
+} 
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 65px auto;
+  font-size: 35px;
+  color: #645db9;
+  font-family: 'Courier New', Courier, monospace;
+  flex-direction: row; 
+} 
+nav a {
+  text-decoration: none;
+  padding: 5px; 
+}
+nav a:hover {
+  color: #777;
+}
+a:hover {
+  color: red;
+}
+/* ----- =MAIN meat ----- */
+  /* main */
+/* ----- =INTRO 1of4 sections in main ----- */
+.bar {
+  background-color: #292557;
+  color: rgb(217, 206, 241);
+  width: 100%;
+  height: 75px;
+  margin: auto;
+  text-align: center;
+}
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 40px;
+  color:rgb(217, 206, 241);
+	padding-top: 10px;
+	margin: 0px;
+}
+.intro-container {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  /* align-items: flex-start;  */
+  /* display: grid;
+  grid-template-rows: 50% 50%;  */
+  width: 100%;
+  margin: 1%;
+  padding: 5px; 
+  /* border: 3px solid #73AD21; */
+}
+.intro-image {
+  /* make this box smaller the photo sits 
+  in smaller*/
+  /* padding: 15px;  */
+  /* flex: 1; */
+  /* flex-shrink: 0;   */ 
+  width: 100%; 
+}
 img {
- 
-  padding: 25px; 
+  /* padding: 25px; */
+  border-radius: 40px;
+  width: 400px; 
+  /* max-width: 75%; */
+  height: auto; 
 }
-
-/* ----- =classes ----- */
+/* .pic {
+  display: block;
+  justify-content: left;
+  margin-right: auto;
+  
+}     */
+.intro-text {
+  /* flex-shrink: 0;  */
+  width: 50%;
+  /* display: inline-block;  */
+  border: 5px black solid; 
+  background-color:rgb(217, 206, 241);
+  margin: 0 50px 0 0; 
+  padding: 10px; 
+  border-radius: 10px;
+  /* align-content: center; */
+  /* float: left;  */
+  /* max-height: 100px;  */
+  
+}
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+  font-size: 36px;
+  margin: 5px;
+  text-align: center;
+}
+.welcome {
+  color: rgb(99, 79, 187);
+  /* text-align: left; */
+}
+p {
+  font-family: georgia;
+  font-size: 22px;
+  color: #000000;
+  /* margin: 10px;
+  margin-left:30px;
+  margin-right:30px;
+  text-align: left; */
+} 
+p a {
+  font-size: 18px; 
+  font-family: 'Courier New', Courier, monospace; 
+  
+}
+/* ----- =ABOUT 2of4 sections in main ----- */
+ul, ol {
+  font-family: georgia;
+  font-size: 18px;
+  color: #000000;
+  margin-left:10%;
+  margin-right:10%;
+  text-align: left;
+}    
+.about-text {
+  padding: 15px; 
+}  
+/* ----- =PORTFOLIO 3of4 sections in main ----- */   
+h4 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 28px;
+  color: #000000;
+  margin: 20px;
+  text-align: left;
+}
+.portfolio-container {
+  display: grid;
+  padding: 15px; 
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+}
+/* .portfolio-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+.portfolio-image {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+} */
+/* ----- =CONTACT 4of4 sections in main ----- */
+.contact-container {
+  padding: 15px; 
+}
+.contact-left {
+  float: left;
+}
+/* .contact-right {
+  margin-left: 10px; 
+} */
+/* .contact-pic {
+  padding: 25px; 
+  
+} */
 .btn-primary {
   color: #fff;
   background-color: #337ab7;
   border-color: #2e6da4;
 }
-
-.btn-purple {
-  color: rgb(217, 206, 241);
-  background-color: #292557;
-  border-color: #0e0c2c;
-}
-
 .btn {
   display: inline-block;
   font-family: arial, sans-serif;
@@ -36,195 +198,156 @@ img {
   padding: 5px 11px;
   border-radius: 6px;
 }
-
-/* a:link {
-  color: #292557;
-  text-decoration: none; 
-} */
-
-a:hover {
-  color: red;
-}
-
-.item {
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.pic {
-  display: block;
-  /* justify-content: left; */
-  margin-right: auto;
-  
-}
-
-.image-container {
-  display: inline-flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center; 
-}
-/* 
-.intro {
-  justify-content: center;
-  display: flex;
-} */
-
-/*.resize {
-    width: 300px;
-    height: auto;
-    align-content: center; 
-}*/
-/* ----- =my name ----- */
-
-h1 {
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	font-size: 60px;
-  color: #292557;
-	padding-top: 0px;
-	margin: 10px;
-  text-align: center;
-  font-size: 28;
-}
-
-
-/* ----- =nav ----- */
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 65px auto;
-  font-size: 35px;
-  color: #645db9;
-  font-family: 'Courier New', Courier, monospace;
-
-}
-
-nav a {
-  text-decoration: none;
-  /* margin-right: 40px; */
-  /* padding-right: 5%;  */
-  
-}
-
-nav a:hover {
-  color: #777;
-}
-
-nav a:last-of-type {
-  /* margin-right: 20px; */
-}
-
-mark{
-  background-color:#a8a7d3;
- }
-
-.welcome {
-   color: rgb(99, 79, 187);
-   text-align: left;
- }
-
-/* ----- =sub headers on about & contact ----- */
-
-h2 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-	font-size: 40px;
-  color:rgb(217, 206, 241);
-	padding-top: 10px;
-	margin: 0px;
-}
-
-.dark-background {
-  background-color: #292557;
+.btn-purple {
   color: rgb(217, 206, 241);
+  background-color: #292557;
+  border-color: #0e0c2c;
 }
-
-.wrapper {
-  width: 100%;
-  height: 75px;
-  margin: auto;
+h5 {
+  font-size: 18px;
+  text-align: left; 
+  margin-left: 10%; 
+  border: 10%; 
+  font-weight: 100;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-.text-centered {
-  text-align: center;
-}
-
-/* ----- =paragraphs & list all pgs ----- */
-
-p {
-  font-family: georgia;
-	font-size: 28px;
-  color: #000000;
-	margin: 10px;
-	margin-left:30px;
-	margin-right:30px;
-  text-align: left;
-}
-
-ul, ol {
-  font-family: georgia;
-	font-size: 18px;
-  color: #000000;
-	margin-left:10%;
-	margin-right:10%;
-  text-align: left;
-}
-
-/* ----- footer on every pg----- */
-
-h3 {
-  font-family: 'Courier New', Courier, monospace;
-	font-size: 18px;
-  color: #000000;
-	margin: 20px;
-  text-align: center;
-}
-
-
-/* h1 {
-    font-size: 28; 
-} */
-
-
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
+/* form */
 #formBox {
   margin: auto;
 }
-
-#submit {
-    max-width: 30%;
-}
-
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  align-items: stretch;
+  /* min-width: 250px;  */
+}             
 #message {
-    height: 200px; 
+  height: 200px; 
 }
-
+#submit {
+  max-width: 30%;
+}
 label, #submit {
-    margin-top: 10px;
+  margin-top: 10px;
 }
-
-.nav {
-    display: flex;
-    flex-direction: row;
+.contact-socials {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
 }
+/* ----- =FOOTER bottom bun ----- */
+  /* footer CSS */
+h6 {
+  text-align: center; 
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+}
+/* ----- =the page ends ----- */
 
+/* ----- =DESKTOP FRIENDLY ----- */
 @media all and (min-width: 800px) {
     #formBox {
         max-width: 600px;
         min-width: 350px;
     }
-
-    .image-container {
+    body {
       flex-direction: row;
+    }
+    .intro-container {
+      flex-direction: row;
+      /* justify-content: center;
+      padding: 15px; 
+      width: 50%; 
+      margin: 3%;  */
+    }
+    .portfolio-container {
+      flex-direction: row;
+      grid-auto-flow: column;
     }
 }
 
-/* ////////////////////////////////// */
 
 
+
+
+
+
+
+
+
+
+/* ----- =STRUCTURE NOTES ----- */
+/* ----- =the page starts ----- */
+/* body */
+/* ----- =HEADER top bun ----- */
+  /* header
+    h1
+    h1 a 
+    nav
+    nav a */
+  /* ----- =MAIN meat ----- */
+  /* main */
+  /* ----- =INTRO 1of4 sections in main ----- */
+    /* section 
+    .intro
+    #intro 
+      .bar
+        h2
+      .intro-container
+        .intro-image
+          img
+          .pic
+        .intro-text
+          h1 
+          .welcome
+          p  */
+  /* ----- =ABOUT 2of4 sections in main ----- */
+    /* section
+    .about
+    #about
+      .about-text
+      .about-list
+        .bar
+          h2
+        .about-text
+          p
+        .about-list
+        ol
+          ol li */     
+  /* ----- =PORTFOLIO 3of4 sections in main ----- */
+    /* .portfolio
+    #portfolio
+      .bar
+        h2
+      .portfolio-container
+        .portfolio-box
+          img
+          .portfolio-image
+          h3
+          p
+          p a */
+  /* ----- =CONTACT 4of4 sections in main ----- */
+    /* .contact
+    #contact
+      .bar  
+        h2
+      .contact-container
+        .contact-left
+          .contact-image
+            .pic
+          .contact-socials
+            p
+              ul
+                ul li
+                ul li a
+        .contact-right
+          .form-box
+            form  
+              label
+              input */
+  /* ----- =FOOTER bottom bun ----- */
+  /* footer  
+    h3 */
+/* ----- =the page ends ----- */
