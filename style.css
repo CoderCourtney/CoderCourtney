@@ -6,7 +6,6 @@ body {
   flex-direction: column;
   flex-wrap: wrap; 
   background-color: #fff;
-  margin: auto;
 }
 /* ----- =HEADER top bun ----- */
 header {
@@ -42,7 +41,9 @@ a:hover {
   color: red;
 }
 /* ----- =MAIN meat ----- */
-  /* main */
+/* main {
+  flex-wrap: wrap; 
+} */
 /* ----- =INTRO 1of4 sections in main ----- */
 .bar {
   background-color: #292557;
