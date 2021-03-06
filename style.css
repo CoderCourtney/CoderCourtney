@@ -30,7 +30,7 @@ nav {
   font-size: 35px;
   color: #645db9;
   font-family: 'Courier New', Courier, monospace;
-  flex-direction: row; 
+  flex-direction: column; 
 } 
 nav a {
   text-decoration: none;
@@ -265,6 +265,9 @@ h6 {
     .portfolio-container {
       flex-direction: row;
       grid-auto-flow: column;
+    }
+    nav {
+      flex-direction: row; 
     }
 }
 
