@@ -77,7 +77,8 @@ img {
   height: auto; 
 }
 .intro-text {
-  width: 50%;
+  /* width: 100%; */
+  align-items: center;
   border: 5px black solid; 
   background-color:rgb(217, 206, 241);
   margin: 0 50px 0 0; 
