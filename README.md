@@ -1,6 +1,6 @@
 ### HIYA 👋 NICE TO MEET YOU, I'M COURTNEY!
 
-![PICTURE OF CODING](https://raw.githubusercontent.com/CoderCourtney/CoderCourtney/main/GitHub-Resume.jpg)
+![PICTURE OF CODING](https://raw.githubusercontent.com/CoderCourtney/CoderCourtney/main/github-rez.jpg)
 
 - 🔭 I’m currently working on an artist's job bookings tracking app.
 - 🌱 I’m currently learning Java.
