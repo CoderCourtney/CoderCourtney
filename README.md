@@ -1,6 +1,6 @@
 ### HIYA 👋 NICE TO MEET YOU, I'M COURTNEY SHANE, A FULL STACK JAVASCRIPT SOFTWARE ENGINEER
 
-![PICTURE OF CODING](./GitHub-resume.jpg)
+![PICTURE OF CODING](./images/home/GitHub-resume.jpg)
 
 - 🔭 I’m currently working on an artist's job bookings tracking app.
 - 🌱 I’m currently learning Java.
